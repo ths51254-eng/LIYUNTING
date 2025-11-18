@@ -1,80 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="TREASURE">
-        <meta name="description" content="TREASUREのサイトです。">
-        <title>TREASUREのサイト</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    </head>
-    <body>
-        <header class="page-header">
-            <div class="header_wrapper"><!--flexコンテナ-->
-                <div class="header_logo">
-                    <h1><a href="index.html"><img src="images/img_logo.jpg" alt="TREASURE"></a></h1>
-               </div>
-                <nav class="header_nav">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="profile.html">PROFILE</a></li>
-                        <li><a href="discography.html">DISCOGRAPHY</a></li>
-                        <li><a href="live.html">LIVE</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div class="mainvisual">
-            <img src="images/mainvisual.jpg" alt="TREASUREのメインビジュアル">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    <div class="works-grid">
+        <div class="work-card">
+            < img src="https://picsum.photos/300/200?random=1" alt="作品1">
+            <h3>作品1</h3>
+            <p>Webサイト制作</p >
         </div>
-
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/swiper_cover.jpg" alt="swiper_cover"></div>
-                <div class="swiper-slide"><img src="images/swiper1.jpg" alt="swiper1"></div>
-                <div class="swiper-slide"><img src="images/swiper2.jpg" alt="swiper2"></div>
-                <div class="swiper-slide"><img src="images/swiper3.jpg" alt="swiper3"></div>
-                <div class="swiper-slide"><img src="images/swiper4.jpg" alt="swiper4"></div>
-                <div class="swiper-slide"><img src="images/swiper6.jpg" alt="swiper6"></div>
-                <div class="swiper-slide"><img src="images/swiper7.jpg" alt="swiper7"></div>
-                <div class="swiper-slide"><img src="images/swiper9.jpg" alt="swiper9"></div>
-                <div class="swiper-slide"><img src="images/swiper10.jpg" alt="swiper10"></div>
-                <div class="swiper-slide"><img src="images/swiper11.jpg" alt="swiper11"></div>
-                <div class="swiper-slide"><img src="images/swiper12.jpg" alt="swiper12"></div>
-            </div>
-            <!-- 左右 -->
-            <div class="swiper-pagination"></div>
-            <!-- 左右ボタン -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div class="work-card">
+            < img src="https://picsum.photos/300/200?random=2" alt="作品2">
+            <h3>作品2</h3>
+            <p>デザインデモ</p >
         </div>
-            <div class="swiper-text">
-                <p>TREASURE（トレジャー）は、韓国の事務所YG ENTERTAINMENTに所属10人組の男性アイドルグループだ。サバイバルオーディション番組「YG宝石箱(YG TREASURE BOX)」を通じて、2020年8月7日にデビューした。韓国人と日本人メンバーを含む10人組グループとして活躍している。<br><br>
-                </p>
-            </div>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                }
-            });
-        </script>
-
-            <footer class="copyright">
-                <small>Copyright 2025 TREASURE</small>
-            </footer>
-    </body>
+        <div class="work-card">
+            < img src="https://picsum.photos/300/200?random=3" alt="作品3">
+            <h3>作品3</h3>
+            <p>アプリ開発</p >
+        </div>
+    </div>
+</body>
 </html>
